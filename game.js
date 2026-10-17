@@ -8,12 +8,13 @@ import { getDatabase, ref, set, update, onValue, onDisconnect, remove, get, chil
 */
 const firebaseConfig = {
   apiKey: "AIzaSyCBfl-3fkDbuz-3e2Ozwnc_8lCMf4LIu2o",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  databaseURL: "https://YOUR_PROJECT-default-rtdb.firebaseio.com",
-  projectId: "YOUR_PROJECT",
-  storageBucket: "YOUR_PROJECT.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  authDomain: "offroad-f4836.firebaseapp.com",
+  databaseURL: "https://offroad-f4836-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "offroad-f4836",
+  storageBucket: "offroad-f4836.firebasestorage.app",
+  messagingSenderId: "531882004157",
+  appId: "1:531882004157:web:b610f8552e2923f9a5f1d4",
+  measurementId: "G-DY3JM8K9H1"
 };
 
 const $ = id => document.getElementById(id);
