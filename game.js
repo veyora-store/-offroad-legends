@@ -7,7 +7,7 @@ import { getDatabase, ref, set, update, onValue, onDisconnect, remove, get, chil
   Enable Realtime Database and set rules for a public prototype (rules are in README).
 */
 const firebaseConfig = {
-  apiKey: "PASTE_YOUR_FIREBASE_API_KEY",
+  apiKey: "AIzaSyCBfl-3fkDbuz-3e2Ozwnc_8lCMf4LIu2o",
   authDomain: "YOUR_PROJECT.firebaseapp.com",
   databaseURL: "https://YOUR_PROJECT-default-rtdb.firebaseio.com",
   projectId: "YOUR_PROJECT",
