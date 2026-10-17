@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="theme-color" content="#101711">
+  <title>Offroad Legends</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app">
+    <section id="lobby" class="panel">
+      <div class="brand">OFFROAD <span>LEGENDS</span></div>
+      <p class="sub">LIGHTWEIGHT 3D • DRIVE TOGETHER</p>
+      <label for="playerName">YOUR DRIVER NAME</label>
+      <input id="playerName" maxlength="16" placeholder="TrailRider" autocomplete="nickname">
+      <div class="room-actions">
+        <button id="createBtn" class="primary">CREATE ROOM</button>
+        <div class="join-row">
+          <input id="roomCode" maxlength="6" placeholder="ROOM CODE" autocapitalize="characters">
+          <button id="joinBtn">JOIN</button>
+        </div>
+      </div>
+      <p id="status" role="status">Create a room, then share its code with friends.</p>
+      <div class="tips">TIP: Use landscape mode for the best driving view.</div>
+    </section>
+    <section id="game" hidden>
+      <canvas id="scene"></canvas>
+      <div class="hud">
+        <div class="hud-top"><div class="pill">🏁 <span id="roomLabel">----</span></div><div class="pill">👥 <span id="playerCount">1</span></div><button id="leaveBtn" class="small">EXIT</button></div>
+        <div class="hud-bottom">
+          <div class="steer">
+            <button id="leftBtn" aria-label="Steer left">◀</button>
+            <button id="rightBtn" aria-label="Steer right">▶</button>
+          </div>
+          <div class="drive">
+            <button id="brakeBtn" class="brake">BRAKE</button>
+            <button id="gasBtn" class="gas">▲<small>GAS</small></button>
+          </div>
+        </div>
+        <div class="speed"><strong id="speedValue">0</strong><small>KM/H</small></div>
+        <div id="toast" class="toast"></div>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
