@@ -157,7 +157,7 @@ function frame(now){
   throttle=keyState.gas?1:0;braking=keyState.brake?1:0;steer=(keyState.left?-1:0)+(keyState.right?1:0);
   speed+=throttle*8*dt;speed-=braking*13*dt;speed-=(!throttle&&!braking?2.5*dt:0);speed=Math.max(0,Math.min(speed,13));
   heading+=steer*(.7+speed*.045)*dt;
-  car.rotation.y=heading;
+  car.rotation.y=heading+Math.PI;
   car.position.x+=Math.sin(heading)*speed*dt;
   worldZ-=speed*dt;
   if(worldZ < -125)worldZ=0;
